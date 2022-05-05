@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Result = ({option,selected}) => {
-    console.log(option,selected)
   return (
         <>
         {option==='eng'?<div className="result">
