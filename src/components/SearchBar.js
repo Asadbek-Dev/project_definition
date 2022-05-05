@@ -3,6 +3,7 @@ import "./SearchBar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import Axios from "axios";
+import data from '../Data.json'
 import Select from 'react-select';
 import Result from "./Result";
 
@@ -13,11 +14,8 @@ function SearchBar({ placeholder}) {
     const [selected, setSelected] = useState([]);
     const [option, setOption] = useState('eng');
 
-    useEffect(() => {
-    
-        Axios.get("http://localhost:3001/Uzbek").then((response) => {
-          setWords(response.data);
-        });
+    useEffect(() => {   
+          setWords(data);
       }, []);
 
       const options = [
