@@ -84,6 +84,24 @@ margin-top: 10px;
 white-space:pre-wrap;
 word-break:break-word;
 }
+@media (min-width: 1400px) {
+  .result {
+    width: 80vw;
+    margin-left: -25%;
+  }
+}
+@media (max-width: 1400px) {
+  .result {
+    width: 80vw;
+    margin-left: -23%;
+  }
+}
+@media (max-width: 1000px) {
+  .result {
+    width: 80vw;
+    margin-left: -17%;
+  }
+}
 @media (max-width: 768px) {
   .result {
     width: 80vw;
